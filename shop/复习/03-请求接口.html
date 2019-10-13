@@ -1,0 +1,33 @@
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$.ajax({
+    type: 'get',
+    url: 'http://127.0.0.1:3000/',
+    dataType: 'json',
+    data: {id:111},
+    success(res) {
+        console.log(1111)
+        console.log(res)
+    }, error(err) {
+        console.log(err)
+    }
+})
+// ajax
+// // 1.创建xhr对象
+// const xhr = new XMLHttpRequest()
+// // 2.监听
+// xhr.onreadystatechange = function() {
+//     // 判断是否等于4 结束
+//     if (xhr.readyState == 4) {
+//         if (xhr.status == 200) {
+//             // console.log(xhr.responseText) 默认响应的是数组格式的字符串 
+//             console.log(JSON.parse(xhr.responseText))
+//         }
+//     }
+// }
+// // 3.声明请求方式，请求地址，同步异步
+// xhr.open('get', 'http://127.0.0.1:3000/')
+// // 4.发送
+// xhr.send(null)
+</script>

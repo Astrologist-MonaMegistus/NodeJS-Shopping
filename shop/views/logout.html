@@ -1,0 +1,24 @@
+<!-- 清除h5存储，跳转登录页 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
+        <script>
+        
+            localStorage.clear() // removeItem 是一个个清除，clear全部清除
+            // alert('退出成功')
+            layer.msg('退出成功')
+            setTimeout(function() {
+                location.href = './login.html'
+            }, 1000)
+        </script>
+</body>
+</html>
